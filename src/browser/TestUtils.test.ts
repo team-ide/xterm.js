@@ -30,6 +30,13 @@ export class TestTerminal extends Terminal {
 }
 
 export class MockTerminal implements ITerminal {
+  
+  public setBindKeysBefore(arg: any): void {
+    // this._bindKeysBefore = arg
+  }
+  public setBindKeysAfter(arg: any): void {
+    // this._bindKeysAfter = arg
+  }
   public onBlur!: IEvent<void>;
   public onFocus!: IEvent<void>;
   public onA11yChar!: IEvent<string>;

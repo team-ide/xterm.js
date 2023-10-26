@@ -980,6 +980,8 @@ declare module 'xterm' {
      * based measurements need to be performed when this function is called.
      */
     open(parent: HTMLElement): void;
+    setBindKeysBefore(arg: any): void;
+    setBindKeysAfter(arg: any): void;
 
     /**
      * Attaches a custom key event handler which is run before keys are

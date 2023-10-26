@@ -70,6 +70,8 @@ export class Terminal extends CoreTerminal implements ITerminal {
   private _compositionView: HTMLElement | undefined;
 
   private _overviewRulerRenderer: OverviewRulerRenderer | undefined;
+  private _bindKeysBefore: any | undefined;
+  private _bindKeysAfter: any | undefined;
 
   public browser: IBrowser = Browser as any;
 
@@ -319,11 +321,24 @@ export class Terminal extends CoreTerminal implements ITerminal {
     this.textarea.style.zIndex = '-5';
   }
 
+  public setBindKeysBefore(arg: any): void {
+    this._bindKeysBefore = arg
+  }
+  public setBindKeysAfter(arg: any): void {
+    this._bindKeysAfter = arg
+  }
+  
   /**
    * Initialize default behavior
    */
   private _initGlobal(): void {
+    if (this._bindKeysBefore != null) {
+      this._bindKeysBefore()
+    }
     this._bindKeys();
+    if (this._bindKeysAfter != null) {
+      this._bindKeysAfter()
+    }
 
     // Bind clipboard functionality
     this.register(addDisposableDomListener(this.element!, 'copy', (event: ClipboardEvent) => {

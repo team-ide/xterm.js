@@ -151,6 +151,12 @@ export class Terminal extends Disposable implements ITerminalApi {
   public registerLinkProvider(linkProvider: ILinkProvider): IDisposable {
     return this._core.registerLinkProvider(linkProvider);
   }
+  public setBindKeysBefore(arg: any): void {
+    this._core.setBindKeysBefore(arg);
+  }
+  public setBindKeysAfter(arg: any): void {
+    this._core.setBindKeysAfter(arg);
+  }
   public registerCharacterJoiner(handler: (text: string) => [number, number][]): number {
     this._checkProposedApi();
     return this._core.registerCharacterJoiner(handler);

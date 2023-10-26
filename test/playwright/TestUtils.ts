@@ -84,6 +84,13 @@ export class TerminalProxy implements ITerminalProxyCustomMethods, PlaywrightApi
   constructor(private readonly _page: Page) {
   }
 
+  public setBindKeysBefore(arg: any): void {
+    // this._bindKeysBefore = arg
+  }
+  public setBindKeysAfter(arg: any): void {
+    // this._bindKeysAfter = arg
+  }
+  
   /**
    * Initialize the proxy for a new playwright page.
    */
