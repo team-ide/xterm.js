@@ -1,6 +1,6 @@
 {
-  "name": "@xterm/addon-unicode11",
-  "version": "0.6.0",
+  "name": "teamide-xterm-addon-unicode11",
+  "version": "0.6.1",
   "author": {
     "name": "The xterm.js authors",
     "url": "https://xtermjs.org/"
@@ -21,6 +21,6 @@
     "prepublishOnly": "npm run package"
   },
   "peerDependencies": {
-    "@xterm/xterm": "^5.0.0"
+    "teamide-xterm": "^5.3.0"
   }
 }

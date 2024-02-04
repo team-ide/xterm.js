@@ -1,7 +1,7 @@
 {
   "name": "teamide-xterm",
   "description": "Full xterm terminal, in your browser",
-  "version": "5.3.4",
+  "version": "5.3.7",
   "main": "lib/xterm.js",
   "style": "css/xterm.css",
   "types": "typings/xterm.d.ts",
@@ -75,6 +75,8 @@
     "@types/ws": "^8.2.0",
     "@typescript-eslint/eslint-plugin": "^6.2.00",
     "@typescript-eslint/parser": "^6.2.00",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
     "chai": "^4.3.4",
     "cross-env": "^7.0.3",
     "deep-equal": "^2.0.5",

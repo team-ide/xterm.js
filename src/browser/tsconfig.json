@@ -3,7 +3,8 @@
   "compilerOptions": {
     "target": "ES5",
     "lib": [
-      "dom"
+      "dom",
+      "ES2021"
     ],
     "outDir": "../../out",
     "types": [

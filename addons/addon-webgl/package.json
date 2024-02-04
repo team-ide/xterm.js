@@ -1,6 +1,6 @@
 {
-  "name": "@xterm/addon-webgl",
-  "version": "0.16.0",
+  "name": "teamide-xterm-addon-webgl",
+  "version": "0.16.1",
   "author": {
     "name": "The xterm.js authors",
     "url": "https://xtermjs.org/"
@@ -23,6 +23,6 @@
     "start-server-only": "node ../../demo/start-server-only"
   },
   "peerDependencies": {
-    "@xterm/xterm": "^5.0.0"
+    "teamide-xterm": "^5.3.0"
   }
 }
